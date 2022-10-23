@@ -13,7 +13,7 @@ contract Governance is Ownable {
         emit ValueChanged(newValue);
     }
 
-    function retrive() private onlyOwner  view returns(uint256) {
+    function retrive() public onlyOwner  view returns(uint256) {
         return value;
     }
 }
